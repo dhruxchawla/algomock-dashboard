@@ -44,3 +44,8 @@
     color: green;
     font-size: large;
 }
+
+.box-shadow-style {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
