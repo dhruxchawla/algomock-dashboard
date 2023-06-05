@@ -7,6 +7,7 @@ import setUpAccount from '@/functions/request';
 import { getLocalStorage } from '@/functions/dashboardFunctions';
 import Router from 'next/router'
 import { redText} from '../../styles/styles.module.css'
+import Image from 'next/image';
 
 
 function AccountCard({name, imageUrl, config}) {
@@ -69,7 +70,7 @@ function AccountCard({name, imageUrl, config}) {
         </div>
 
         <div style={{textAlign:'center', backgroundColor:'#efeeee', borderRadius:'5px', padding:'4vh 6vh', width:'20vw'}}>
-            <img src={imageUrl} className={accountCardImage}/>
+            <Image alt='' src={imageUrl} className={accountCardImage}/>
             <h3 style={{margin : '2vh 0'}}>{name}</h3>
             <Button as="input" onClick={openForm} type="button" value="Setup" />
         </div>

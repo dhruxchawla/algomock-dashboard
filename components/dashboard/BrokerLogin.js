@@ -53,7 +53,7 @@ function BrokerLogin() {
       if(Router.query.success === 'success'){
         setSuccess(true);
       }
-    }, [])
+    }, [getAllBrokerAccounts])
 
   useEffect(() => {
     if (success) {

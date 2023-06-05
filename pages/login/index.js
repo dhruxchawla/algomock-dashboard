@@ -6,6 +6,7 @@ import { login } from '@/functions/request';
 import AuthContext from '@/context/AuthProvider';
 import { setLocalStorage } from '@/functions/dashboardFunctions';
 import {redText} from '../../styles/styles.module.css'
+import Link from 'next/link';
 
 
 export default function Login() {
@@ -131,7 +132,7 @@ export default function Login() {
       </div>
 
       <div style={{textAlign:'center', marginTop:'1.5vh'}}>
-        <a href='/register' style={{textDecoration:'none'}}>Register here, If you don't have an account</a>
+        <Link href='/register' style={{textDecoration:'none'}}>Register here, If you dont have an account</Link>
       </div>
     </Form>
     </div>

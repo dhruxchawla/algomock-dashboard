@@ -8,7 +8,7 @@ import Router from 'next/router'
 import { getLocalStorage } from '@/functions/dashboardFunctions';
 import { getUserData } from '@/functions/request';
 
-function test() {
+function Test() {
   const {auth, setAuth} = useContext(AuthContext);
   const accessToken = getLocalStorage('accessToken');
     const refreshToken = getLocalStorage('accessToken');
@@ -47,4 +47,4 @@ function test() {
   )
 }
 
-export default test
+export default Test

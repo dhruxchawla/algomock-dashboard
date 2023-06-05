@@ -2,6 +2,7 @@ import Form from 'react-bootstrap/Form';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import {accountCardImage} from '../../styles/styles.module.css'
+import Image from 'next/image';
 
 function AccountForm({name, imageUrl}) {
   const [showForm1, setShowForm1] = useState(false);
@@ -45,7 +46,7 @@ function AccountForm({name, imageUrl}) {
     <div>
 
         <div style={{textAlign:'center', backgroundColor:'#efeeee', height:'25vh', width:'15vw', borderRadius:'5px'}}>
-            <img src={imageUrl} className={accountCardImage}/>
+            <Image alt='' src={imageUrl} className={accountCardImage}/>
             <h1 style={{margin : '2vh 0'}}>{name}</h1>
             <Button as="input" onClick={() => handleButtonClick(1)} type="button" value="Setup" />
         </div>

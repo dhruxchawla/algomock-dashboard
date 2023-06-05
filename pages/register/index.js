@@ -6,6 +6,7 @@ import { register } from '@/functions/request';
 import AuthContext from '@/context/AuthProvider';
 import { setLocalStorage } from '@/functions/dashboardFunctions';
 import {redText} from '../../styles/styles.module.css'
+import Link from 'next/link';
 
 export default function JoinOurTeam() {
 
@@ -102,7 +103,7 @@ export default function JoinOurTeam() {
       </div>
 
       <div style={{textAlign:'center', marginTop:'1.5vh'}}>
-        <a href='/login' style={{textDecoration:'none'}}>Login here, If you already have an account</a>
+        <Link href='/login' style={{textDecoration:'none'}}>Login here, If you already have an account</Link>
       </div>
       </Form>
   </div>
