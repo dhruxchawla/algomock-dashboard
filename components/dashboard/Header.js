@@ -100,7 +100,7 @@ const socketData = () => {
   //     //console.log('local market data : ', );
   //   });
 }
-
+/* eslint-disable */
   useEffect(() => {
     setInterval(() => {
       socketData();

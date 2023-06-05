@@ -505,6 +505,7 @@ function CreateAlgo() {
         {/* Render the forms */}
         {forms.map((form, index) => (
           <div
+            key={index}
             style={{
               display: "flex",
               justifyContent: "space-evenly",

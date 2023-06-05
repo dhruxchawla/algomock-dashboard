@@ -13,6 +13,8 @@ function Test() {
   const accessToken = getLocalStorage('accessToken');
     const refreshToken = getLocalStorage('accessToken');
     const userId = getLocalStorage('userId');
+
+/* eslint-disable */
   useEffect(() => {
 
     getUserData(accessToken, userId); // to get the user data from access token and user ID
